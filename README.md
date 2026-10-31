@@ -43,7 +43,7 @@ TypeScript のドキュメント (https://www.typescriptlang.org/docs/) を**リ
 
 ## 共通のコード (サブモジュール)
 
-画面、HTML の取り出し、翻訳、取得、キャッシュ、ML Kit のプラグインは**共通のリポジトリ** [doc-translator-core](https://github.com/sluchin/doc-translator-core) にあります (サブモジュール `shared/`)。このリポジトリには TypeScript だけの設定 (`src/site.ts` と `src-tauri/src/lib.rs` の `SITE`) と、アイコンと、アプリの設定だけがあります。姉妹アプリは [zephyr-doc-trans](https://github.com/sluchin/zephyr-doc-trans) (Zephyr)、[kotlin-doc-trans](https://github.com/sluchin/kotlin-doc-trans) (Kotlin)、[react-doc-trans](https://github.com/sluchin/react-doc-trans) (React の日本語のドキュメント) です。
+画面、HTML の取り出し、翻訳、取得、キャッシュ、ML Kit のプラグインは**共通のリポジトリ** [doc-translator-core](https://github.com/sluchin/doc-translator-core) にあります (サブモジュール `shared/`)。このリポジトリには TypeScript だけの設定 (`src/site.ts` と `src-tauri/src/lib.rs` の `SITE`) と、アイコンと、アプリの設定だけがあります。姉妹アプリは [zephyr-doc-trans](https://github.com/sluchin/zephyr-doc-trans) (Zephyr)、[kotlin-doc-trans](https://github.com/sluchin/kotlin-doc-trans) (Kotlin)、[react-doc-ja](https://github.com/sluchin/react-doc-ja) (React の日本語のドキュメント) です。
 
 ```bash
 git clone --recurse-submodules git@github.com:sluchin/typescript-doc-trans.git   # 取り込み済みなら: git submodule update --init
