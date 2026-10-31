@@ -8,7 +8,7 @@ TypeScript のドキュメント (https://www.typescriptlang.org/docs/) を**リ
 
 ## 仕組み
 
-```
+```text
 リンクを開く ─> Rust: ドキュメントのページを取得 (www.typescriptlang.org だけ)
             ─> React: 本文を取り出し (リンクと画像は絶対 URL に)、段落ごとに分ける
             ─> Rust: 段落 (HTML の断片) を翻訳 (コードには「翻訳しない」印を付ける) ─> キャッシュ
