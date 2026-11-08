@@ -3,7 +3,7 @@
 TypeScript のドキュメント (https://www.typescriptlang.org/docs/) を**リンクを開いたときに** 取得して、日本語に翻訳して表示するアプリです (事前に翻訳したものはありません)。メニュー (☰) の「原文」で、英語に戻せます。PC (Linux, Windows, macOS) と Android で動きます。
 
 - **Tauri 2** (Rust) + **React** (TypeScript)。
-- 翻訳のサービスは設定で選びます。**Google Cloud Translation** (Basic, v2)、**Gemini API**、**ML Kit** (Android のみ。端末の中で翻訳。オフライン)、**Google 翻訳 (無料)** (キー不要。非公式の入口)。API キーは使う人が自分のものをアプリの設定に入れます (キーはアプリに含めません)。
+- 翻訳のサービスは設定で選びます。**Google Cloud Translation** (Basic, v2)、**Gemini API**、**ML Kit** (Android のみ。端末の中で翻訳。オフライン)、**Google 翻訳 (無料)** (キー不要。非公式の入口)。API キーは使う人が自分のものをアプリの設定に入れます。設定が空のときは、ビルドのときの環境変数 (`GOOGLE_CLOUD_TRANSLATION_API_KEY`、`GEMINI_API_KEY`) のキーを使います (自分で使うビルドだけで使い、配るビルドには入れません)。
 - 翻訳の結果は端末にキャッシュします (同じ文章をもう一度翻訳しないため。翻訳の費用を減らします)。
 
 ## 仕組み
